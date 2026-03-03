@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>en2sos | Ahorra en tu Seguro de Vivienda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FFD700; /* Amarillo Marca */
+            --secondary: #25D366; /* Verde WhatsApp */
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; background-color: white; }
+
+        /* Header */
+        header { background: #fff; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-weight: 700; font-size: 24px; color: var(--dark); text-transform: lowercase; }
+        .logo span { color: var(--primary); }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; color: white; padding: 100px 5%; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; max-width: 700px; margin-inline: auto; }
+
+        /* Botones */
+        .cta-button { background: var(--primary); color: var(--dark); padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; transition: 0.3s; border: none; cursor: pointer; }
+        .cta-button:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(255,215,0,0.4); }
+
+        /* Beneficios */
+        .benefits { padding: 80px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; background: var(--light); }
+        .card { background: white; padding: 30px; border-radius: 15px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .card h3 { color: var(--dark); margin-bottom: 15px; }
+
+        /* Sección Legal / Medellín */
+        .legal-info { padding: 60px 5%; text-align: center; border-left: 8px solid var(--primary); margin: 40px 5%; background: #fff9e6; }
+
+        /* Formulario Container */
+        .form-section { padding: 80px 5%; text-align: center; }
+        .form-container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 20px; }
+
+        /* Footer */
+        footer { background: var(--dark); color: white; padding: 40px 5%; text-align: center; }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: var(--secondary); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; z-index: 1000; }
+
+        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">en2<span>sos</span></div>
+        <a href="#contacto" class="cta-button" style="padding: 10px 20px; font-size: 14px;">Mi Ahorro</a>
+    </header>
+
+    <section class="hero">
+        <h1>Deja de pagar el seguro del banco doble en Medellín</h1>
+        <p>Si vives en unidad residencial, ya pagas seguro de incendio en la administración. Recupera ese dinero legalmente con la Ley 546/99.</p>
+        <a href="#contacto" class="cta-button">EMPEZAR MI ESTUDIO GRATIS</a>
+    </section>
+
+    <section class="benefits">
+        <div class="card">
+            <h3>📈 Ahorro Real</h3>
+            <p>Reduce tu cuota mensual eliminando el cobro del seguro colectivo del banco.</p>
+        </div>
+        <div class="card">
+            <h3>⚖️ 100% Legal</h3>
+            <p>Proceso respaldado por la Superintendencia Financiera de Colombia.</p>
+        </div>
+        <div class="card">
+            <h3>🚀 Sin Trámites</h3>
+            <p>Nosotros nos encargamos de toda la gestión con el banco y la administración.</p>
+        </div>
+    </section>
+
+    <section class="legal-info">
+        <h2>Protegemos tu patrimonio en Medellín</h2>
+        <p>Efectuamos el endoso de tu póliza global para que el banco acepte la protección que ya tienes. Cero riesgos, máxima eficiencia.</p>
+    </section>
+
+    <section class="form-section" id="contacto">
+        <h2>Solicita tu estudio sin costo</h2>
+        <p style="margin-bottom: 30px;">Carga tu extracto o déjanos tus datos:</p>
+        <div class="form-container">
+            <p>[ El formulario de Google se inserta aquí ]</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 en2sos.com - Medellín, Antioquia.</p>
+        <p style="font-size: 12px; margin-top: 10px;">Aplican términos y condiciones. Ley de Vivienda 546 de 1999.</p>
+    </footer>
+
+    <a href="https://wa.me/573000000000?text=Hola!%20Quiero%20ahorrar%20en%20mi%20seguro" class="whatsapp-float" target="_blank">
+        <span style="font-style: normal;">💬</span>
+    </a>
+
+</body>
+</html>
